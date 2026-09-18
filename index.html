@@ -14,15 +14,15 @@
           <img src="resorts.svg" alt="" aria-hidden="true" style="display:block;width:24px;height:24px;object-fit:contain;flex:0 0 24px;">
           <span>All-Inclusive</span>
         </button>
-        <button id="tab-cruise" onclick="showSection('cruise')" style="min-width:145px;border:0;border-radius:0;background:transparent;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 #e5190d;">
+        <button id="tab-cruise" onclick="showSection('cruise')" style="min-width:145px;border:0;border-radius:0;background:transparent;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 transparent;">
           <img src="cruise-ship.svg" alt="" aria-hidden="true" style="display:block;width:24px;height:24px;object-fit:contain;flex:0 0 24px;">
           <span>Cruise</span>
         </button>
-        <button id="tab-destinations" onclick="showSection('destinations')" style="min-width:145px;border:0;border-radius:0;background:transparent;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 #e5190d;">
+        <button id="tab-destinations" onclick="showSection('destinations')" style="min-width:145px;border:0;border-radius:0;background:transparent;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 transparent;">
           <img src="destinations.svg" alt="" aria-hidden="true" style="display:block;width:24px;height:24px;object-fit:contain;flex:0 0 24px;">
           <span>Destinations</span>
         </button>
-        <button id="tab-theme-parks" onclick="showSection('theme-parks')" style="min-width:145px;border:0;border-radius:0;background:transparent;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 #e5190d;">
+        <button id="tab-theme-parks" onclick="showSection('theme-parks')" style="min-width:145px;border:0;border-radius:0;background:transparent;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 transparent;">
           <img src="theme-parks.svg" alt="" aria-hidden="true" style="display:block;width:24px;height:24px;object-fit:contain;flex:0 0 24px;">
           <span>Theme Parks</span>
         </button>
@@ -105,7 +105,7 @@
         section.style.display = active ? 'block' : 'none';
         tab.style.backgroundColor = active ? 'unset' : 'transparent';
         tab.style.color = active ? '#000000' : '#0B7790';
-        tab.style.boxShadow = 'inset 0 -3px 0 #e5190d';
+        tab.style.boxShadow = active ? 'inset 0 -3px 0 #e5190d' : 'inset 0 -3px 0 transparent';
       }
     }
   </script>
