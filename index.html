@@ -10,7 +10,7 @@
     <div style="max-width:1180px;margin:0 auto;">
 
       <div style="background:#ffffff;border-radius:10px;padding:10px;box-shadow:0 5px 18px rgba(11,119,144,.10);border:1px solid #D8E3E6;margin-bottom:34px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;">
-        <button id="tab-all-inclusive" onclick="showSection('all-inclusive')" style="min-width:145px;border:0;border-radius:12px;background:#EAF5F7;color:#0B7790;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 #0B7790;">
+        <button id="tab-all-inclusive" onclick="showSection('all-inclusive')" style="min-width:145px;border:0;color:#000000;padding:12px 20px 11px;font-size:15px;font-weight:700;cursor:pointer;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:9px;box-shadow:inset 0 -3px 0 #e5190d;background-color:unset;">
           <img src="resorts.svg" alt="" aria-hidden="true" style="display:block;width:24px;height:24px;object-fit:contain;flex:0 0 24px;">
           <span>All-Inclusive</span>
         </button>
@@ -103,9 +103,9 @@
         var tab = document.getElementById('tab-' + sections[i]);
         var active = sections[i] === sectionId;
         section.style.display = active ? 'block' : 'none';
-        tab.style.background = active ? '#EAF5F7' : 'transparent';
-        tab.style.color = '#0B7790';
-        tab.style.boxShadow = active ? 'inset 0 -3px 0 #0B7790' : 'inset 0 -3px 0 transparent';
+        tab.style.backgroundColor = active ? 'unset' : 'transparent';
+        tab.style.color = active ? '#000000' : '#0B7790';
+        tab.style.boxShadow = active ? 'inset 0 -3px 0 #e5190d' : 'inset 0 -3px 0 transparent';
       }
     }
   </script>
