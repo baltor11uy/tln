@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Family Travel – Featured Travel Partners</title>
 </head>
+<script>
+  function sendHeight() {
+    const height = document.documentElement.scrollHeight;
+
+    window.parent.postMessage(
+      {
+        type: 'resize-tln-iframe',
+        height: height
+      },
+      '*'
+    );
+  }
+
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+
+  const observer = new ResizeObserver(sendHeight);
+  observer.observe(document.body);
+
+  // Importante porque tus tabs cambian la altura del contenido
+  document.addEventListener('click', function () {
+    setTimeout(sendHeight, 50);
+  });
+</script>
 <body style="margin:0;padding:0;background:#ffffff;font-family:Arial,Helvetica,sans-serif;color:#333333;">
   <div style="width:100%;padding:40px 16px 56px;box-sizing:border-box;">
     <div style="max-width:1180px;margin:0 auto;">
